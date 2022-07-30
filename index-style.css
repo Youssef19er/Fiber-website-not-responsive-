@@ -1,0 +1,299 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-top{
+    background-color: rgb(250, 250, 250);
+    min-height: 125vh;
+}
+.header-top .top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    min-width: 100%;
+}
+.first a{
+    text-decoration: none;
+}
+.first h3{
+    font-size: 1.7rem;
+    color: #7739f3;
+}
+.mid ul li , .sign li{
+    display: inline-block;
+    margin-top: 5px;
+}
+.mid ul li a , .sign li a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: black;
+    position: relative;
+}
+
+.sign .last{
+    color: white;
+    background-color: #7739f3;
+    padding: .55rem .6rem;
+    border-radius: 5px;
+}
+.sign .last a{
+    color: #ffffff;
+}
+/* section two */
+.content{
+    display: flex;
+    max-width: 85%;
+    margin: auto;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.content .left , .content .right{
+    flex:  1 1 50%;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.right img{
+    max-width: 100%;
+    margin-left: 20px;
+}
+.left .img{
+    display: flex;
+    margin: .4rem 0;
+}  
+.left .img p{
+    margin-left: 10px;
+    font-weight: 500;
+} 
+.left h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.left h4{
+    line-height: 1.5;
+    word-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.left .form{
+    display: flex;
+    align-items: center;
+}
+.left .form input{
+    width: 11rem;
+    min-height: 46px;
+    border-radius: 5px;
+    border: none;
+    background-color: #7739f3;
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+.form a{
+    color: #7739f3;
+    font-size: 18px;
+    font-weight: 550;
+    margin-left: 40px;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 10px;
+}
+.form a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    height: 3px;
+    background-color: #7739f3;
+}
+.main-box{
+    display: flex;
+}
+.main-box .box-1{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.main-box .sec{
+    margin-left: 20px;
+}
+.box-1 img{
+    margin-right: 5px;
+}
+/* pack section */
+.pack{
+    padding: 13px;
+    width: 95%;
+    margin: 3rem auto;
+    display: block;
+}
+.pack h4{
+    color: #7739f3;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.pack h1{
+    font-size: 2.7vw;
+    margin: 1.4rem 0 2rem 0;
+    width: 50%;
+}
+.pack .box{
+    display: flex;
+    height: 24vh;
+    justify-content: space-evenly;
+}
+.box section{
+    padding: 20px;
+    margin-top: .5rem;
+}
+.box h3{
+    font-weight: 700;
+    margin: .8rem 0;
+    font-size: 1.5rem;
+}
+.box p{
+    line-height: 1.5;
+    font-weight: 500;
+    color: #747474;
+}
+/* pypl */
+.pypl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+    background-color: #7739f3;
+    padding: 2rem 1rem 0 0rem;
+    border-radius: 7px;
+    min-height: 60vh;
+}
+.pypl .right , .pypl .left{
+    flex: 1 1 45%;
+    padding: 0 2rem;
+    position: relative;
+}
+.pypl .right{
+    padding: 0 0 0 4.5rem;
+}
+.pypl .right h2{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 600;
+    width: 100%;
+}
+.pypl .right p{
+    color: #eee;
+    margin: 11px 0;
+    line-height: 1.6;
+    max-width: 70%;
+}
+.pypl .right .form input[type="button"]{
+    background-color: #11cccc;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 14px 1rem;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+} 
+.pypl .left img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+/* flex section in main */
+.main-flex{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.main-flex .b-flex{
+    flex-basis: 30%;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 3px 0 #d1d0d0;
+    border-radius: 4px;
+}
+.b-flex section{
+    display: flex;
+    align-items: center;
+}
+.b-flex img{
+    margin-right: 10px;
+}
+.b-flex .p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2c2c2c;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+.b-flex .field{
+    width: 100%;
+    text-align: center;
+}
+.b-flex input[type="button"]{
+    padding: 1rem 1.6rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b24f8;
+    background-color: #7739f328;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    border: 1px solid #7739f3;
+}
+/* footer */
+.footer{
+    display: flex;
+    min-height: 50vh;
+    background-color: #fafafa;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 6rem;
+    position: relative;
+}
+.footer .feet-1{
+    width: 40%;
+}
+.footer .feet-1 p{
+    width: 80%;
+    font-weight: 500;
+    line-height: 2;
+}
+.footer .feet a{
+    text-decoration: none;
+}
+.footer .feet a:not(.feet-1 a) , .footer .c100{
+    color: #3c3b3d;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+}
+.footer .feet p{
+    line-height: 1.6;
+    margin: 1rem 0 5rem 0;
+}
+.footer .feet h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.footer .feet ul{
+    list-style-type: none;
+}
+.footer .feet li{
+    margin: .6rem 0;
+}

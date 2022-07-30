@@ -1,0 +1,229 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/pexels-invisiblepower-1076885.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sign{
+    width: 90%;
+    min-height: 90vh;
+    display: flex;
+}
+.sign .left , .sign .right{
+    width: 50%;
+}
+.left .center ,  .right .center{
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+.in{
+    flex-direction: row-reverse;
+}
+.in .left .center{
+    margin-top: 4rem;
+}
+.up .center h4 , .in .center h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2rem 0 .4rem 0rem ;
+    position: relative;
+    display: inline-block;
+}
+.up .center h4{
+    color: #5010d0; 
+}
+.in h4{
+    color: #00a6a6;
+}
+.up .center h4::before{
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    width: 120%;
+    height: 4px;
+    background-color: #5010d0;
+
+}
+.in .center h4::before{
+    content: "";
+    background-color: #00a6a6 ;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    width: 120%;
+    height: 4px;
+}
+.sign .left{
+    background-color: #ffffff;
+}
+.left h2{
+    margin: 5% 0 3% 0 ;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.center label{
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: -17px;
+}
+.left input:not(#box){
+    width: 100%;
+    margin-top: 22px;
+    padding: 11px 14px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border: 1.4px solid #dddddd;
+    outline: none;
+    background-color: #f1efef8c;
+}
+.left #pass{
+    background-image: url(img/hide\ password.svg);
+    background-repeat: no-repeat;
+    background-position: 98%;
+    cursor: pointer;
+}
+.left input[type="checkbox"]{
+    margin: 14px 0 0 0;
+}
+.left input[type="checkbox"]::before{
+    content: 'By creating an account on Fiber, you agree to the Terms & Conditions.';
+    position: absolute;
+    margin-left: 1.1rem;
+    font-size: 14px;
+    font-weight: 450;
+    max-width: 35%;
+}
+.up .center #sub , .in .center #sub{
+    width: 80%;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .8s;
+    display: block;
+    margin: 1rem  auto .5rem auto;
+}
+.up .center #sub{
+    background-color: #5010d0;   
+}
+.in .center #sub{
+    background-color: #00a6a6;
+}
+.up .center #sub:hover , .in .center #sub:hover{
+    background-color: white !important;
+}
+.up .center #sub:hover{
+    border: 2px solid #5010d0;
+    color: #5010d0;
+}
+.in .center #sub:hover{
+    border: 2px solid #00a6a6;
+    color: #00a6a6;
+}
+.center p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 570;
+    /* margin: .7rem 0; */
+}
+.up .center a{
+    color: #5010d0;
+    font-weight: 700;
+}
+.in .center a{
+    color: #00a6a6;
+    font-weight: 700;
+}
+.up .right{
+    background-color: #5010d0;
+}
+.in .right{
+    background-color: #00a6a6;
+}
+.right .center{
+    text-align: center;
+    margin: -10px auto;
+}
+.mid h2{
+    color: white;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.right .mid p{
+    color: #e2dfdf;
+    font-size: 16px;
+    font-weight: 350;
+    margin-bottom: 13px;
+}
+.right .center .dote{
+    background-color: white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.center .dote-1 , .dote-2 , .dote-3{
+    opacity: .6;
+}
+.sign .icon{
+    display: flex;
+    justify-content: center;
+    margin: 1rem  0;
+}
+.sign .icon a{
+    margin: 0 7px;
+}
+@media screen and (max-width: 1300px) {
+    .sign .right .center{
+        text-align: center;
+        margin: 3rem auto;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .left .center{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 966px) {
+    .sign{
+        width: 90%;
+        min-height: 80vh;
+        flex-direction: column-reverse;
+    }.sign .left , .sign .right{
+        width: 100%;
+    }
+    .sign .right{
+        margin: 3rem 0 0rem 0 ;
+    }
+    .sign .left{
+        margin: 0rem 0 3rem 0 ;
+    }
+    .left input[type="checkbox"]::before{
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 660px){
+    .up .center #sub , .in .center #sub{
+        margin: 2rem  auto .5rem auto;
+    }
+}
